@@ -12,7 +12,7 @@ on:
 jobs:
     test:
         name: Test Calculator
-        runs-on: unbuntu-latest
+        runs-on: ubuntu-latest
 
         steps:
             - name: Checkout Repository
@@ -36,7 +36,7 @@ jobs:
     deploy:
         name: Deployment Demo 
         needs: test
-        runs-on: unbuntu-latest
+        runs-on: ubuntu-latest
 
         steps:
             - name: Simulate Deployment
